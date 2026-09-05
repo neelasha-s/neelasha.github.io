@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Neelasha's Portfolio</title>
+</head>
+<body>
+    <div class="body-1">
+        <img src="images/img-1.jpg" alt="image of Neelasha" style="border: 5px solid #bababa;">
+        <div style="display:flex; flex-direction:column; gap:20px;"> 
+            <p style="font-size: 48px; font-weight: 900; margin:0; padding:0;">Neelasha Sudarshan</p>
+            <p style="font-size: 18px; color: #bababa">Undergraduate Student, Computer Science and Engineering</p>
+            <p style="font-size: 18px; color: #bababa">Santa Clara University</p>
+            <p style="font-size: 18px; color: #bababa">nsudarshan@scu.edu</p>
+
+            <button id="sign-up">Github</button> 
+            <button id="sign-up">LinkedIn</button> 
+            <button id="sign-up">Resume</button> 
+        </div>
+    </div>
+
+    <div class="gallery">
+        <div style="font-size:36px; font-weight: 900; color:#1F2937;">Projects</div>
+        <ul class="images" style="gap: 100px;">
+            <li class="project">
+                <img class="gallery-img" src="images/mech-interp-graph.png" alt="graph from interpretability project">
+                <div>
+                    <div class="bio"> I tested white-box interventions to prompt injection attacks. I experimented with probe-gated steering methods to find the tradeoff between attack suppression and benign task performance.</div>
+                    <div> <a href="#">Code</a> &middot; <a href="#">Write-up</a> </div>
+                </div>
+            </li>
+            <li class="project">
+                <img class="gallery-img" src="images/collusion-graph.png" alt="graph from collusion project">
+                <div>
+                    <div class="bio"> I studied how collusion between AI agents can subvert AI control systems, through the mechanisms proposed in "When can we trust untrusted monitoring? A safety case sketch across collusion strategies" (Gardner-Challis et al.). </div>
+                    <div> <a href="#">Code</a> &middot; <a href="#">Write-up</a> </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <div class="footer">
+        <div class="footer-text"> Made with ♡ by Neelasha </div>
+    </div>
+</body>
+</html>
