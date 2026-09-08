@@ -145,6 +145,21 @@ ul {
     text-align: left;
 }
 
+.about {
+    background-color: #e6e6e1; 
+    padding-left: 200px; 
+    padding-right: 200px; 
+    padding-bottom: 25px; 
+}
+
+.about-header {
+    font-size: 48px; 
+    font-weight: 300; 
+    font-family: "Halant", sans-serif;
+    color: #3b3b3b; 
+    text-align: center;
+}
+
 .bio {
     color: #bababa; 
 }
