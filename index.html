@@ -11,7 +11,7 @@
         <img src="assets/img-1.jpg" alt="image of Neelasha" style="border: 5px solid #e0d7d7;">
         <div style="display:flex; flex-direction:column; gap:10px;"> 
             <p class="title">Neelasha Sudarshan</p>
-            <div>
+            <div style="text-align: center">
             <p class="bio">Undergraduate Student, Computer Science and Engineering</p>
             <p class="bio">Santa Clara University</p>
             <p class="bio">nsudarshan@scu.edu</p>
@@ -21,29 +21,31 @@
     </div>
 
     <div class="gallery">
-        <div style="font-size:36px; font-weight: 900; color:#1F2937;">Projects</div>
+        <div class="project-header">Projects</div>
         <ul class="images" style="gap: 100px;">
             <div class="project-gallery">
                 <li class="project">
-                    <div>
-                        <div class="bio"> I tested white-box interventions to prompt injection attacks. I experimented with probe-gated steering methods to find the tradeoff between attack suppression and benign task performance.</div>
-                        <div> <a href="#" class="bio">Code</a> &middot; <a href="#" class="bio">Write-up</a> </div>
+                    <div style="width: 600px;">
+                        <div class="project-title">White-Box Steering Defenses for Safe AI</div>
+                        <div class="project-text"> I tested white-box interventions to prompt injection attacks. I experimented with probe-gated steering methods to find the tradeoff between attack suppression and benign task performance.</div>
+                        <div> <a href="https://github.com/neelasha-s/steering-role-confusion" class="project-links">Code</a> &middot; <a href="https://docs.google.com/document/d/1RD7W_9jnx_MAogenABvq_UGiKJtgy55ov4JYgRQJJwg/edit?usp=sharing" class="project-links">Write-up</a> </div>
                     </div>
-                    <img class="gallery-img" src="assets/mech-interp-graph.png" alt="graph from interpretability project">
+                    <div>
+                        <img class="gallery-img" src="assets/mech-interp-graph.png" alt="graph from interpretability project">
+                    </div>
                 </li>
                 <li class="project">
-                    <div>
-                        <div class="bio"> I studied how collusion between AI agents can subvert AI control systems, through the mechanisms proposed in "When can we trust untrusted monitoring? A safety case sketch across collusion strategies" (Gardner-Challis et al.). </div>
-                        <div> <a href="#" class="bio">Code</a> &middot; <a href="#" class="bio">Write-up</a> </div>
+                    <div style="width: 600px;">
+                        <div class="project-title">Collusion and AI Control</div>
+                        <div class="project-text"> I studied how collusion between AI agents can subvert AI control systems, through the mechanisms proposed in "When can we trust untrusted monitoring? A safety case sketch across collusion strategies" (Gardner-Challis et al.). </div>
+                        <div> <a href="https://github.com/neelasha-s/lasr-labs-2025-control-project" class="project-links">Code</a> &middot; <a href="https://docs.google.com/document/d/1Qyobm8GKOHNfEsSDSpydtBOG161DakZI4ABnjfhMUyw/edit?usp=sharing" class="project-links">Write-up</a> </div>
                     </div>
-                    <img class="gallery-img" src="assets/collusion-graph.png" alt="graph from collusion project">
+                        <img class="gallery-img" style="width: 375px; height: 312.5px;" src="assets/collusion-graph.png" alt="graph from collusion project">
                 </li>
             </div>
         </ul>
     </div>
 
-    <div class="footer">
-        <div class="footer-text"> Made with ♡ by Neelasha </div>
-    </div>
+    <div class="footer"></div>
 </body>
 </html>
