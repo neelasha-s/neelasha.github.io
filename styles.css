@@ -60,7 +60,6 @@ body {
     font-family: "Figtree", serif; 
     font-size: 18px; 
     color: #bababa; 
-    text-align: center;
 }
 
 .links {
@@ -76,8 +75,8 @@ img {
 .gallery-img {
     border-radius: 10px; 
     border: 5px solid #3882F6; 
-    height: 400px; 
-    width: 280px; 
+    height: 240px; 
+    width: 410px; 
 }
 
 .text {
@@ -109,11 +108,15 @@ ul {
 }
 
 .project {
-    width: 225px; 
     display: flex; 
-    flex-direction: column; 
+    flex-direction: row; 
     gap: 10px; 
-    text-align: center; 
+    margin-left: 200px; 
+    margin-right: 100px; 
+    &-gallery {
+        display: flex; 
+        flex-direction: column; 
+    }
 }
 
 .bio {
