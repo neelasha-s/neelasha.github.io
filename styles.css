@@ -1,236 +1,256 @@
 @import url('https://fonts.googleapis.com/css2?family=Halant:wght@300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
 
+* {
+    box-sizing: border-box;
+}
+
 body {
-    min-height: 100vh; 
-    display: flex; 
-    flex-direction: column; 
-    justify-content: space-between; 
-    margin: 0; 
-}
-
-.title {
-    font-family: "Halant", serif; 
-    font-size: 48px; 
-    font-weight: 250; 
-    margin:0;
-    padding:0;
-    text-align: center;
-}
-
-.header {
-    color: white; 
-    height: 72px; 
-    padding: 15px 100px; 
-    font-size: 24px; 
-    display: flex; 
-    justify-content: space-between; 
-}
-
-#header-text {
-    font-size: 48px; 
-    font-weight: 900; 
-}
-
-.body-1 { 
-    flex: 1 1 auto; 
-    background-color: #1F2937;
-    color: white; 
-    display: flex; 
-    gap: 100px; 
-    align-items: center; 
-    justify-content: center; 
-    padding-top: 20px; 
-    padding-bottom: 20px; 
-}
-
-.gallery {
-    flex: 1 1 auto; 
-    display: flex; 
-    flex-direction: column; 
-    align-items: center; 
-    gap: 30px; 
-    padding-top: 30px; 
-    padding-bottom: 50px;  
-    background-color: #f2f2ee; 
-}
-
-.bio {
-    font-family: "Figtree", serif; 
-    font-size: 18px; 
-    color: #bababa; 
-}
-
-.project-text {
-    font-family: "Figtree", serif; 
-    font-size: 18px; 
-    color: #1F2937; 
-}
-
-.project-links {
-    font-family: "Figtree", serif; 
-    font-size: 18px; 
-    color: #1F2937; 
-    text-decoration-line: underline;
-}
-
-.project-title {
-    font-family: "Halant", serif; 
-    font-size: 30px; 
-    font-weight: 300px; 
-    color: #3b3b3b; 
-}
-
-.links {
-    font-family: "Figtree", serif; 
-    font-size: 18px; 
-    text-align: center; 
-}
-
-img {
-    height: 300px; 
-}
-
-.gallery-img {
-    border: 5px solid #4374b8; 
-    height: 264px; 
-    width: 451px; 
-}
-
-.text {
-    flex-grow: 1; 
-    text-align: center; 
-}
-
-#logo {
-    font-weight: 700; 
-}
-
-button {
-    height: 35px; 
-    width: 125px; 
-    margin-top: 10px; 
-    background-color: #3882F6; 
-    color: #F9FAF8; 
-    border: 1px solid #3882F6; 
-    border-radius: 10px; 
-    font-size: 18px; 
-}
-
-ul {
-    list-style-type: none; 
-    margin: 0; 
-    padding: 0; 
-    display: flex; 
-    gap: 20px; 
-}
-
-.project {
-    display: flex; 
-    flex-direction: row; 
-    gap: 10px; 
-    margin-left: 200px; 
-    margin-right: 200px; 
-    &-gallery {
-        display: flex; 
-        flex-direction: column; 
-    }
-}
-
-.project-header {
-    font-size: 48px; 
-    font-weight: 300; 
-    font-family: "Halant", sans-serif;
-    color:#4374b8; 
-    text-align: left;
-}
-
-.about {
-    background-color: #e6e6e1; 
-    padding-left: 200px; 
-    padding-right: 200px; 
-    padding-bottom: 25px; 
-}
-
-.about-header {
-    font-size: 48px; 
-    font-weight: 300; 
-    font-family: "Halant", sans-serif;
-    color: #3b3b3b; 
-    text-align: center;
-}
-
-.bio {
-    color: #bababa; 
-}
-
-a {
-    text-decoration: none; 
-    color: white; 
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0;
 }
 
 p {
-    margin: 0; 
-    padding: 0; 
+    margin: 0;
+    padding: 0;
 }
 
-.body-2 {
-    flex: 1 1 auto; 
-    background-color: #E5E7EB; 
-    display: flex; 
-    flex-flow: column wrap; 
-    align-items: center; 
-    padding-top: 60px; 
-    padding-bottom: 60px; 
+a {
+    text-decoration: none;
+    color: white;
 }
 
-.quote-author {
-    width: 700px; 
-    display: flex; 
-    justify-content:flex-end;
-    font-size: 20px; 
-    font-weight: 700; 
+/* ---------- Intro (dark band) ---------- */
+
+.body-1 {
+    flex: 1 1 auto;
+    background-color: #1F2937;
+    color: white;
+    display: flex;
+    gap: 100px;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 24px;
 }
 
-.body-3 {
-    flex: 1 1 auto; 
-    background-color: #F9FAF8; 
-    display: flex; 
-    justify-content: center; 
-    align-content: center; 
-    padding-top: 60px; 
-    padding-bottom: 60px; 
+.headshot {
+    height: 300px;
+    width: auto;
+    max-width: 100%;
+    border: 5px solid #e0d7d7;
 }
 
-.call-to-action {
-    background-color: #3882F6; 
-    border-radius: 10px; 
-    display: flex; 
-    gap: 20px; 
-    padding: 30px 60px; 
+.intro {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
-.action-text {
-    display: flex; 
-    flex-flow: column wrap; 
+.title {
+    font-family: "Halant", serif;
+    font-size: 48px;
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+    text-align: center;
 }
 
-.button-header-text {
-    color:#F9FAF8;
-    font-size: 18px; 
-    font-weight: 700; 
+.bio-block {
+    text-align: center;
 }
+
+.bio {
+    font-family: "Figtree", sans-serif;
+    font-size: 18px;
+    color: #bababa;
+}
+
+.links {
+    font-family: "Figtree", sans-serif;
+    font-size: 18px;
+    text-align: center;
+}
+
+.links a {
+    text-decoration-line: underline;
+}
+
+/* ---------- Focus ---------- */
+
+.about {
+    background-color: #e6e6e1;
+    padding: 0 24px 25px;
+}
+
+.about .project-text {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.about-header {
+    font-size: 48px;
+    font-weight: 300;
+    font-family: "Halant", serif;
+    color: #3b3b3b;
+    text-align: center;
+}
+
+/* ---------- Projects ---------- */
+
+.gallery {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 30px 24px 50px;
+    background-color: #f2f2ee;
+}
+
+.project-header {
+    font-size: 48px;
+    font-weight: 300;
+    font-family: "Halant", serif;
+    color: #4374b8;
+    text-align: left;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.images {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.project-gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    width: 100%;
+    max-width: 1100px;
+}
+
+.project {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 32px;
+}
+
+.project-body {
+    flex: 1 1 0;
+    min-width: 0;
+    max-width: 600px;
+}
+
+.project-title {
+    font-family: "Halant", serif;
+    font-size: 30px;
+    font-weight: 300;
+    color: #3b3b3b;
+}
+
+.project-text {
+    font-family: "Figtree", sans-serif;
+    font-size: 18px;
+    color: #1F2937;
+}
+
+.project-links {
+    font-family: "Figtree", sans-serif;
+    font-size: 18px;
+    color: #1F2937;
+    text-decoration-line: underline;
+}
+
+.gallery-img {
+    border: 5px solid #4374b8;
+    width: 451px;
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 451 / 264;
+    object-fit: contain;
+    background: white;
+}
+
+.gallery-img-square {
+    width: 375px;
+    aspect-ratio: 375 / 312.5;
+}
+
+/* ---------- Footer ---------- */
 
 .footer {
-    background-color: #1F2937; 
-    color: white; 
-    height: 50px; 
-    padding: 15px 100px; 
-    font-size: 24px; 
-    display: flex;  
+    background-color: #1F2937;
+    color: white;
+    height: 50px;
+    padding: 15px 24px;
+    font-size: 24px;
+    display: flex;
 }
 
-.footer-text {
-    margin: auto; 
-    font-size: 15px; 
+/* ---------- Phones and narrow windows ---------- */
+
+@media (max-width: 900px) {
+    .body-1 {
+        flex-direction: column;
+        gap: 24px;
+        padding: 32px 20px;
+    }
+
+    .headshot {
+        height: auto;
+        width: 220px;
+    }
+
+    .title {
+        font-size: 38px;
+    }
+
+    .bio,
+    .links,
+    .project-text,
+    .project-links {
+        font-size: 16px;
+    }
+
+    .about-header,
+    .project-header {
+        font-size: 36px;
+    }
+
+    .about {
+        padding: 0 20px 24px;
+    }
+
+    .gallery {
+        padding: 24px 20px 40px;
+    }
+
+    .project {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 16px;
+    }
+
+    .project-body {
+        max-width: none;
+    }
+
+    .project-title {
+        font-size: 26px;
+    }
+
+    .gallery-img,
+    .gallery-img-square {
+        width: 100%;
+    }
 }
